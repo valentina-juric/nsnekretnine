@@ -1,0 +1,192 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  color: white;
+  padding: 0;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+.container{
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.tema{
+  padding: 15px 40px;
+  background: #233E58;
+  color: white;
+  margin: 20px 0;
+}
+a{
+  text-decoration: none;
+}
+ul{
+  margin: 0;
+  padding: 0;
+}
+
+header{
+  background: #233E58;
+  color: #141f1f;
+  padding-top: 20px;
+  min-height: 60px;
+  border-bottom: #35353a 3px solid;
+}
+
+header a{
+  color: #141f1f;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+header li{
+  float: left;
+  display: inline;
+  padding: 0 20px;
+}
+
+header #nazivfirme{
+  float: left;
+}
+
+header #nazivfirme h1{
+  margin: 0;
+}
+
+header nav{
+  float: right;
+  margin-top: 10px;
+}
+header .naglasak, .trenutnastrana a{
+  color: #666162;
+  font-weight: bold;
+}
+
+header a:hover{
+  color: #666162;
+  font-weight: bold;
+}
+
+#pozadinskaslika{
+  min-height: 400px;
+  background-image: url(../images/slikapozadinska1.jpg);
+  text-align: center;
+  color: #35353a;
+  font-weight: bold;
+  border-bottom: #35353a 3px solid;
+}
+
+#pozadinskaslika h1{
+  margin-top: 150px;
+  font-size: 55px;
+  margin-bottom: 10px;
+  color: #35353a;
+}
+
+#slike{
+  margin-top: 20px;
+}
+
+#slike .slika{
+  float: left;
+  text-align: center;
+  width: 30%;
+  padding: 10px;
+  color: #233E58;
+}
+
+#slike .slika img{
+  width: 70px;
+}
+
+aside#sidebar{
+  float: right;
+  width: 25%;
+  margin-top: 120px;
+}
+
+aside#sidebar2{
+  float: left;
+  width: 32%;
+  margin-top: 10px;
+  margin-left: 90px;
+}
+
+article#opis{
+  float:left;
+  width: 65%;
+}
+
+
+article h1{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  line-height: 1.5;
+  color: #233E58;
+}
+
+article p{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #233E58;
+}
+
+button{
+  background: #666162;
+  color: white;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+@keyframes animacija {
+  from {width: 150px; height: 300px;}
+  to {width: 170px; height: 350px;}
+}
+#anislika{
+  width: 150px;
+  height:300px;
+  float: right;
+  margin-top: 70px;
+  margin-right: 200px;
+  animation-name: animacija;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+
+footer{
+  padding: 5px;
+  margin-top: 10px;
+  background: #233E58;
+  color: #666162;
+  text-align: center;
+  border-top: #35353a 3px solid;
+}
+
+@media(max-width:768px){
+  header #nazivfirme,
+  header nav,
+  header nav li,
+  #slike .slika,
+  article#opis,
+  aside#sidebar{
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+  header{
+    padding-bottom: 20px;
+  }
+  #pozadinskaslika h1{
+    margin-top: 50px;
+  }
+  #anislika{
+    animation: none;
+  }
+
+}
